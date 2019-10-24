@@ -40,6 +40,7 @@
 		#logout {
 		float: right;
 		margin-top: 10px;
+		margin-right: 10px;
 		}
 	</style>
 </head>
@@ -53,7 +54,9 @@
 			<li><a href = "">Reports</a></li>
 			<li><a href = "">Users</a></li>
 			<div id = "logout">
-				<img src = "logout.png" height = "30px" width = "30px"/>
+				<a href = "">
+					<img src = "logout.png" height = "30px" width = "30px"/>
+				</a>
 			</div>
 		</ul>
 		<div id = "search" align = "right">
@@ -73,7 +76,6 @@
 				<td>First Name</td>
 				<td>Last Name</td>
 				<td>Role</td>
-				<!--make the text fields editable and a finish button to finalize it-->
 				<td align = "right" width = "10%"><button type = "button">Edit</button></td>
 				<!--popup window asking if the owner is sure they want to remove the selected user-->
 				<td width = "10%"><button type = "button">Remove</button></td>
@@ -109,6 +111,8 @@
 				<center>
 				Add a new user to the system.</br></br>
 				<input type = "text" placeholder = "User ID"></input></br></br>
+				<input type = "text" placeholder = "Password"></input></br></br>
+				<input type = "text" placeholder = "Confirm Password"></input></br></br>
 				<input type = "text" placeholder = "First Name"></input></br></br>
 				<input type = "text" placeholder = "Last Name"></input></br></br>
 				<input type = "text" placeholder = "Role"></input></br></br>
@@ -116,6 +120,18 @@
 				</center>
 			</form>
 		</div>
+		<form>
+			<center>
+			Edit a user in the system.</br></br>
+			<input type = "text" placeholder = "Change User ID"></input></br></br>
+			<input type = "text" placeholder = "Change Password"></input></br></br>
+			<input type = "text" placeholder = "Confirm Password"></input></br></br>
+			<input type = "text" placeholder = "Change First Name"></input></br></br>
+			<input type = "text" placeholder = "Change Last Name"></input></br></br>
+			<input type = "text" placeholder = "Change Role"></input></br></br>
+			<button type = "submit">Apply</button>
+			</center>
+		</form>
 	</div>
 </body>
 </html>
