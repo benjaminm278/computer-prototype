@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>KPI page</title>
+	<script src="kpiJavaScript.js"></script>
+	<link rel="stylesheet" type="text/css" href="KPI.css">
+</head>
+
+<body>
+	<div class="header">
+  		<img src="unnamed.jpg" />
+  		<h1>ianella cycles</h1>
+	</div>
+	<div class="menu">
+		<ul>
+		  <li><a class="active" href="#">Home</a></li>
+		  <li><a href="#">KPI</a></li>
+		  <li><a href="#">Input item</a></li>
+		  <li><a href="#">Report</a></li>
+		  <li><a href="#">Logout</a></li>
+		</ul>
+	</div>
+
+	<div class="wrapper">
+	<form class="form">
+		First Name:
+		<input type="text" name="firstName" id="firstName"><br>
+		Last Name :
+		<input type="text" name="lastName" id="lastName"><br>
+		Price&emsp;&ensp;&ensp;&ensp;:
+		<input type="text" name="price" id="price"><br>
+		Comission :
+		<input type="text" name="comission" id="comission"><br>
+		<input type="button" value="Calculate" onclick="calculate()">
+	</form>
+
+	<div class="output">
+		<table class="outputTable" id = "outputTable">
+		  <tr>
+		    <th>First name:</th>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <th>Last name:</th>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <th>Price:</th>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <th>Comission:</th>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <th>Amount made:</th>
+		    <td></td>
+		  </tr>
+		</table>
+		<button id="redo">Enter Another KPI</button>
+	</div>
+
+	</div>
+</body>
+</html>
