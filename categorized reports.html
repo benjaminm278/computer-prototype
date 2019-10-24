@@ -2,62 +2,8 @@
 <html>
 	<head>
 		<title>Reports</title>
+		<link rel="stylesheet" type="text/css" href="categorized reports.css">
 	</head>
-
-	<style>
-		h3 {
-			text-decoration-color: #334;
-			font-size: 24px;
-			font-size-adjust: 25px;
-		}
-
-		body {
-		  margin: 0;
-		  font-family: Arial, Helvetica, sans-serif;
-		}
-
-		td {
-			padding: 50px;
-		}
-		.search-container
-		{
-		margin-left: auto;
-
-		}
-
-		.topnav {
-			margin-left: initial;
-		  overflow: hidden;
-		  background-color: #333;
-		}
-
-		.topnav a {
-		  float: left;
-		  color: #f2f2f2;
-		  text-align: center;
-		  padding: 14px 16px;
-		  text-decoration: none;
-		  font-size: 17px;
-		}
-
-		.topnav a:hover {
-		  background-color: #ddd;
-		  color: black;
-		}
-
-		.topnav a.active {
-		  background-color: #4CAF50;
-		  color: white;
-		}
-
-		#result {
-			position: sticky;
-			top: 0;
-			float: right;
-			margin-right: 60px;
-			width: 300px;
-		}
-	</style>
 	<body>
 		<header>
 			<div class="header">
@@ -84,6 +30,12 @@
 
 		<div id="result">
 			<div id="resultTxt">
+				<h1>Summary</h1>
+				<p>Number of items</p>
+				<p>Greatest depreciation</p>
+				<p>Least depreciated</p>
+				<p>Recently added item:</p>
+				<hr>
 				<h1>Item name</h1>
 				<h2>Current value: $95</h2>
 				<p>Original cost: $100</p>
@@ -95,10 +47,21 @@
 			</div>
 		</div>
 
-		<h1>Category Name...</h1>
+		<div class="categoryHeader">
+			<h1 id="categoryName">Category Name...</h1>
+			<select id="sortOpts" name="sort" value="Sort by">
+				<option>Recent items added</option>
+				<option>Recent items added (reverse)</option>
+				<option>Oldest items (by purchase)</option>
+				<option>Newest items (by purchase)</option>
+				<option>Most depreciated</option>
+				<option>Least depreciated</option>
+			</select>
+		</div>
+
 		<hr>
-		<button id="button1"> add</button>
-		<table>
+		<p id="page">Page 1 of 5 >></p>
+		<table id="categoryTable">
 			<tr>
 				<td>
 					<h3>Item</h3>
@@ -136,7 +99,7 @@
 				</td>
 			</tr>
 		</table>
-
+<!--
 		<h1>Another category name...</h1>
 		<hr>
 		<button id="button2">
@@ -165,6 +128,6 @@
 					<p>$0.00</p>
 				</td>
 			</tr>
-		</table>
+		</table>-->
 	</body>
 </html>
