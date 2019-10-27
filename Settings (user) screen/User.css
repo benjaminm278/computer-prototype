@@ -1,0 +1,41 @@
+table {
+	width: 40%;
+	margin-left: 10px;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+li a{
+	float: left;
+	display: block;
+	padding: 18px 30px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	
+}
+li a:hover {
+	background-color: gray;
+}
+#search {
+	margin-top: 10px;
+	margin-right: 10px;
+}
+#add {
+	position: absolute;
+	right: 25%;
+	top: 10%;
+}
+#logout {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+#userTable tr td {
+	padding-top: 70px;
+}
