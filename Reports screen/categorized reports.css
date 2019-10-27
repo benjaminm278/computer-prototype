@@ -72,3 +72,8 @@ td {
 #categoryName {
 	float: left;
 }
+
+#printLink, #exportLink {
+	float: right;
+	padding-left: 30px;
+}
