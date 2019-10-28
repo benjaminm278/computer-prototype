@@ -1,3 +1,3 @@
 function nextPage() {
-	window.location.href = "../Reports screen/categorized reports.html";
+	window.location.href = "../Home screen/home.html";
 }
