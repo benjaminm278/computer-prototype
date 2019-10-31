@@ -4,22 +4,23 @@ body {
 
 ul {
 	list-style-type: none;
-	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 50px;
-	background: #F9F1F1;
 	display: inline-block;
+	border-top: 2.5px solid #626362;
+	border-bottom: 2.5px solid #626362;
 }
 li {
 	display: inline;
-	margin-top: 10px;
 }
 
 li a {
 	margin: 25px;
 	text-decoration: none;
-	color: gray;
+	color: black;
+	font-weight: bold;
+	color: #363736;
 }
 
 nav {
@@ -40,6 +41,7 @@ nav {
 .logo {
 	float: left;
 	width: 100%;
+	margin-bottom: 25px;
 }
 
 .content {
