@@ -12,21 +12,35 @@
 			</div>
 		</header>
 
-		<div class="topnav">
-			<a href="../Home screen/home.html">Home</a>
-			<a href="../Input screen/inputitem.html">Input items</a>
-			<a href="#">Reports</a>
-			<a href="../prototypeKPI/kpi.html">KPI</a>
-			<a href="../Settings (user) screen/User.html">Settings</a>
-			<a href="../Login screen/login.html">Log out</a>
+		<nav>
+			<ul>
+				<li><a href="../Home screen/home.html">Home</a></li>
+				<li><a href="#">Input item</a></li>
+				<li><a href="../Reports screen/categorized reports.html">Reports</a></li>
+				<li><a href="../prototypeKPI/kpi.html">KPI</a></li>
+				<li><a href="../Settings (user) screen/User.html">Settings</a></li>
+				<li><a href="../Login screen/login.html">Log out</a></li>
+			</ul>
+		</nav>
 
-	  		<div class="search-container">
-	    		<form action="">
-		    		<br>
-		    		<br>
-		     		<input type="text" placeholder="Search.." name="search">
-	   			</form>
-	  		</div>
+		<div class="options">
+			<input type="text" placeholder="Search.." name="search">
+			<select id="changeCategory" name="category" value="Change category">
+				<option>Change category</option>
+				<option>Category 1</option>
+				<option>Category 2</option>
+				<option>Category 3</option>
+			</select>
+			<a href="#" id="printLink">Print reports</a>
+			<a href="#" id="exportLink">Export data to CSV</a>
+			<select id="sortOpts" name="sort" value="Sort by">
+				<option>Recent items added</option>
+				<option>Recent items added (reverse)</option>
+				<option>Oldest items (by purchase)</option>
+				<option>Newest items (by purchase)</option>
+				<option>Most depreciated</option>
+				<option>Least depreciated</option>
+			</select>
 		</div>
 
 		<div id="result">
@@ -50,22 +64,6 @@
 
 		<div class="categoryHeader">
 			<h1 id="categoryName">Category Name...</h1>
-			<select id="changeCategory" name="category" value="Change category">
-				<option>Change category</option>
-				<option>Category 1</option>
-				<option>Category 2</option>
-				<option>Category 3</option>
-			</select>
-			<a href="#" id="printLink">Print reports</a>
-			<a href="#" id="exportLink">Export data to CSV</a>
-			<select id="sortOpts" name="sort" value="Sort by">
-				<option>Recent items added</option>
-				<option>Recent items added (reverse)</option>
-				<option>Oldest items (by purchase)</option>
-				<option>Newest items (by purchase)</option>
-				<option>Most depreciated</option>
-				<option>Least depreciated</option>
-			</select>
 		</div>
 
 		<hr>
