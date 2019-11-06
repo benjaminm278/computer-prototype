@@ -5,121 +5,80 @@
 	<link rel="stylesheet" type="text/css" href="User.css">
 </head>
 <body>
-	<div id = "container">
-		<div id = "logo" style = "float:left"><img src = "../Images/Rnbw_Circle.png" height = "50px" width = "50px"/></div>
+	<div class="logo">
+		<img id="imageLogo" src="../Images/Rnbw_Circle.png">
+		<h1 id="company_name">Gianella Cycles</h1>
+	</div>
+	<nav>
 		<ul>
 			<li><a href="../Home screen/home.html">Home</a></li>
-			<li><a href = "../Input screen/inputitem.html">Item Input</a></li>
-			<li><a href = "../Reports screen/Categorized reports.html">Reports</a></li>
-			<li><a href = "../prototypeKPI/kpi.html">KPI</a></li>
-			<li><a href = "#">Users</a></li>
-			<div id = "logout">
-				<a href = "../Login screen/login.html">
-					<img src = "../Images/logout.png" height = "30px" width = "30px"/>
-				</a>
-			</div>
+			<li><a href="../Input Screen/inputitem.html">Input item</a></li>
+			<li><a href="../Reports screen/categorized reports.html">Reports</a></li>
+			<li><a href="../prototypeKPI/kpi.html">KPI</a></li>
+			<li><a href="#">Settings</a></li>
+			<li><a href="../Login screen/login.html">Log out</a></li>
 		</ul>
-		<div id = "search" align = "right">
-			<form>
-				<input type = "text" placeholder = "Search User"></input>
-				<button type = "button">Search</button>
-			</form>
-		</div>
-		<!--
-		<table>
-			<tr>
-				<th align = "left" colspan = "5">Current Users</th>
-				<td><button type = "button">Add</button></td>
-			</tr>-->
-			<!--make method? to input a row for each user instead of hardcoding?--><!--
-			<tr>
-				<td>User 1</td>
-				<td>First Name</td>
-				<td>Last Name</td>
-				<td>Role</td>
-				<td align = "right" width = "10%"><button type = "button">Edit</button></td>-->
-				<!--popup window asking if the owner is sure they want to remove the selected user-->
-				<!--<td width = "10%"><button type = "button">Remove</button></td>
-			</tr>
-			<tr>
-				<td>User 2</td>
-				<td>First Name</td>
-				<td>Last Name</td>
-				<td>Role</td>
-				<td align = "right"><button type = "button">Edit</button></td>
-				<td><button type = "button">Remove</button></td>
-			</tr>
-			<tr>
-				<td>User 3</td>
-				<td>First Name</td>
-				<td>Last Name</td>
-				<td>Role</td>
-				<td align = "right"><button type = "button">Edit</button></td>
-				<td><button type = "button">Remove</button></td>
-			</tr>
-			<tr>
-				<td>User 4</td>
-				<td>First Name</td>
-				<td>Last Name</td>
-				<td>Role</td>
-				<td align = "right"><button type = "button">Edit</button></td>
-				<td><button type = "button">Remove</button></td>
-			</tr>
-		</table>-->
-		<!-- Version 2-->
-		<table id="userTable">
-			<tr>
-				<td>
-					<h3>User 1</h3>
-					<p>Bobby Harry</p>
-				</td>
-				<td>
-					<h3>User 2</h3>
-					<p>Bobby Harry</p>
-				</td>
-				<td>
-					<h3>User 3</h3>
-					<p>Bobby Harry</p>
-				</td>
-				<td>
-					<h3>User 4</h3>
-					<p>Bobby Harry</p>
-				</td>
-				<td>
-					<h3>User 5</h3>
-					<p>Bobby Harry</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<h3>User 5</h3>
-					<p>Bobby Harry</p>
-				</td>
-				<td>
-					<h3>User 5</h3>
-					<p>Bobby Harry</p>
-				</td>
-				<td>
-					<h3>+</h3>
-					<p>Add new user</p>
-				</td>
-			</tr>
-		</table>
-		<div id = "add">
-			<!--method to make visible when add button clicked and hidden when user is added-->
-			<form>
-				<center>
-				Add a new user to the system.</br></br>
-				<input type = "text" placeholder = "User ID"></input></br></br>
-				<input type = "text" placeholder = "Password"></input></br></br>
-				<input type = "text" placeholder = "Confirm Password"></input></br></br>
-				<input type = "text" placeholder = "First Name"></input></br></br>
-				<input type = "text" placeholder = "Last Name"></input></br></br>
-				<input type = "text" placeholder = "Role"></input></br></br>
-				<button type = "submit">Add</button>
-				</center>
-			</form>
-		</div>
+	</nav>
+	<div id = "search" align = "right">
+		<form>
+			<input type = "text" placeholder = "Search User"></input>
+			<button type = "button">Search</button>
+		</form>
+	</div>
+	<table id="userTable">
+		<tr>
+			<td>
+				<h3>User 1</h3>
+				<p>Bobby Harry</p>
+			</td>
+			<td>
+				<h3>User 2</h3>
+				<p>Bobby Harry</p>
+			</td>
+			<td>
+				<h3>User 3</h3>
+				<p>Bobby Harry</p>
+			</td>
+			<td>
+				<h3>User 4</h3>
+				<p>Bobby Harry</p>
+			</td>
+			<td>
+				<h3>User 5</h3>
+				<p>Bobby Harry</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>User 5</h3>
+				<p>Bobby Harry</p>
+			</td>
+			<td>
+				<h3>User 5</h3>
+				<p>Bobby Harry</p>
+			</td>
+			<td>
+				<h3>+</h3>
+				<p>Add new user</p>
+			</td>
+		</tr>
+	</table>
+	<div id = "add">
+		<!--method to make visible when add button clicked and hidden when user is added-->
+		<form>
+			<center>
+			Add a new user to the system.</br></br>
+			<input type = "text" placeholder = "User ID"></input></br></br>
+			<input type = "text" placeholder = "Password"></input></br></br>
+			<input type = "text" placeholder = "Confirm Password"></input></br></br>
+			<input type = "text" placeholder = "First Name"></input></br></br>
+			<input type = "text" placeholder = "Last Name"></input></br></br>
+			<input type = "text" placeholder = "Role"></input></br></br>
+			<button type = "submit">Add</button>
+			</center>
+		</form>
+	</div>
+	<div id = "edit">
 		<form>
 			<center>
 			Edit a user in the system.</br></br>
